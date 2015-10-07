@@ -115,6 +115,8 @@ Not much was mentioned above about the hardware but it should be straightforward
 
 * Please feel free to bring other sensors with you to satisfy your hardware hacking needs:  temperature, wind direction (ha!), humidity, anything you think will make your product better.
 
+* We had a question if we were brining monitors for the Pis.  The answer is no but there are multiple ways you can connect to the Pi without needing a monitor.  The easiest is likely a network cable directly to your laptop and these instructions:  https://www.raspberrypi.org/blog/use-your-desktop-or-laptop-screen-and-keyboard-with-your-pi/.  SSH is your friend!  That might be even better than connecting to WiFi using the USB WiFi dongle.
+
 #Useful Links
 
 https://github.com/InitialState/piot-101/wiki -- great tutorial on getting everything up and running
