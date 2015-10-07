@@ -16,25 +16,25 @@ There was only one way to find out and that meant ordering a device and...well..
 
 Here's the initial packaging and the contents after opening:
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/raspberrypibox.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/raspberrypibox.JPG)
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/raspberrypiboxafteropening.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/raspberrypiboxafteropening.JPG)
 
 For those of us that do not work with hardware the contents look daunting.  All I know how to do is type.  This looks dangerous.
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/geekycontents.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/geekycontents.JPG)
 
 These boxes looked easier to manage.  Rectangles and cardboard...I can handle that.
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/boxesinsideofboxes.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/boxesinsideofboxes.JPG)
 
 A quick start guide and more scary looking components.  What is that silver thing?  And that picture on the quick start guide looks like that one time I had to take the case off of my computer and blow out all of the dirt/cat hair to make the computer start again.  Well, at least there is a guide, I rarely read documentation but it was included so it might actually prove useful.  If nothing else maybe it tells me how not to accidentally electrocute myself.
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/yinandyang.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/yinandyang.JPG)
 
 Well, that was not so bad...except for the fact that I did not have an extra keyboard or mouse lying around.  A quick trip (one of many) to the local Best Buy would solve many issues.
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/allpluggedin.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/allpluggedin.JPG)
 
 #Setup
 
@@ -42,11 +42,11 @@ Why am I telling you about Raspbian inside of a c# GitHub repo?  Well, I had to 
 
 I started with Raspbian, made everything work with Raspbian, and then switched to Windows IoT to see the differences.  Turns out, not much difference.  If you are interested in the Python version of this code click on over to the python repository.  After we get through the two Raspian setup screens we'll switch to Windows and c# for the rest of this loooong "readme".
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/settingupraspbian.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/settingupraspbian.JPG)
 
 Setup screens are usually boring but I found myself engaged while reading each of the setup screens for Raspbian.  Maybe there were subliminal messages telling my body to get into the hardware groove?  As I watched/waited I started peering into the box and showing the cables no fear.
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/almostthere.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/almostthere.JPG)
 
 As for Windows IoT it was similarly easy to setup and get going.  I followed the Getting Started guide at this link:  https://dev.windows.com/en-US/iot.  Basically you copy the Windows IoT core image to a micro sd card (must have Windows 10 to do this) and then insert the micro sd card into the slot on the Raspberry Pi.  Everything went smoothly and before I knew it I was sitting there looking at the screen thinking, "what should I do now?"  But that did not last long, I downloaded the Blinky sample code, compiled it, struggled for a few minutes trying to determine how I deploy, and then found the magic:  the Windows IoT Core Watcher.  This little app runs in the background and when a Raspberry Pi is attached it will be discovered and then using an infamous right click it is possible to login via a web browser and start poking around.  Unfortunately the watcher does not find Pis with USB WiFi dongles.
 
@@ -79,12 +79,12 @@ Below are two final pictures to provide an image of the completed project.  Hope
 
 Here is a picture of the Raspberry Pi in its final configuration.  Notice how simple it is, just a WiFi dongle and the cable attaching it to the breadboard.
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/finalprojectpi.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/finalprojectpi.JPG)
 
 
 And here is the final picture of the breadboard.  Note the orientation of the resistors, the long "leg" (vs. short leg) of the LEDs.  I am a complete newbie with the hardware but after reading a few articles it was fairly easy to setup.  And now that we have come to the end of this "article" (finally) we can move on to bigger and better things.  Controlling a robot that drives around and selects groceries off of shelves, with virtual reality capability, delivered by drone, paying by retinal scan sounds like a beautiful next step.  Anyone care to join?
 
-![RaspberryPi.CSharp](https://github.com/mercurypay/RaspberryPi.CSharp/blob/master/images/finalprojectbreadboard.JPG)
+![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/finalprojectbreadboard.JPG)
 
 
 #Hardware
