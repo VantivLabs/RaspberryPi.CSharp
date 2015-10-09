@@ -135,3 +135,5 @@ And here's another...
 
 https://learnaddict.com/2015/08/03/raspberry-pi-stack-a-platform-for-learning-about-iot/
 
+Raspberry Pi is a trademark of the Raspberry Pi Foundation
+
