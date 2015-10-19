@@ -93,7 +93,7 @@ Not much was mentioned above about the hardware but it should be straightforward
 
 #Good Things to Know
 
-* We will have at least one USB Keyboard and one USB mouse available at the hackathon.  More than likely you will only need the keyboard/mouse combo at the very beginning to connect your Raspberry Pi to the wireless network and then from there you can use remote access capability (SSH, Powershell, direct deploy, etc.) depending on your operating system.
+* We will have at least one USB Keyboard and one USB mouse available at the hackathon.  More than likely you will only need the keyboard/mouse combo at the very beginning to connect your Raspberry Pi to the wireless network and then from there you can use remote access capability (SSH, Powershell, direct deploy, etc.) depending on your operating system.  We had a follow up question if we were bringing monitors for the Pis.  The answer is we hope to have one monitor, usb keyboard, and usb mouse but there are multiple ways you can connect to the Pi without a monitor.  I tried using these instructions:  https://www.raspberrypi.org/blog/use-your-desktop-or-laptop-screen-and-keyboard-with-your-pi/, but found that all I needed to do was attach the Raspberry Pi directly to my macbook with an ethernet cable and then enable Internet sharing and everything just worked.  Really easy and simple...no monitor needed...but as stated above we hope to still bring one just in case.
 
 * It is smart to immediately change the default password.  We know none of the hackathon participants would ever play practical jokes on others but at the end of the day changing default passwords is simple, easy, and well....something everyone should do.
 
@@ -115,7 +115,6 @@ Not much was mentioned above about the hardware but it should be straightforward
 
 * Please feel free to bring other sensors with you to satisfy your hardware hacking needs:  temperature, wind direction (ha!), humidity, anything you think will make your product better.
 
-* We had a question if we were bringing monitors for the Pis.  The answer is no but there are multiple ways you can connect to the Pi without a monitor.  The easiest is likely a network cable directly to your laptop and these instructions:  https://www.raspberrypi.org/blog/use-your-desktop-or-laptop-screen-and-keyboard-with-your-pi/.  SSH is your friend!  That might be even better than connecting to WiFi using the USB WiFi dongle.
 
 #Useful Links
 
