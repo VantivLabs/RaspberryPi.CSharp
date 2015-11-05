@@ -134,5 +134,9 @@ And here's another...
 
 https://learnaddict.com/2015/08/03/raspberry-pi-stack-a-platform-for-learning-about-iot/
 
+#Legal Stuff
+
+[Privacy Policy, Copyright Notices, and Terms of Use](https://vantiv.com/privacy-policy)
+
 Raspberry Pi, Windows, Windows IoT, Visual Studio, and CanaKit are registered or unregistered marks belonging to their respective owners who are unaffiliated with and do not endorse or sponsor Vantiv, and Vantiv likewise does not endorse or sponsor Raspberry Pi, Windows, Windows IoT, Visual Studio, or CanaKit.
 
