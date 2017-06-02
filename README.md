@@ -1,6 +1,6 @@
 # RaspberryPi.CSharp
 
-#Overview
+# Overview
 
 This repository will provide information about the Raspberry Pi specifically for those that are going to accept the Vantiv API challenge at Money20/20.  There will be some interesting challenges with these hardware components but we believe without challenge there is no reward.  These repositories will jumpstart your development.
 
@@ -8,7 +8,7 @@ Infrastructure in the financial world is mind numbing and detecting issues quick
 
 This code is going to integrate to the Vantiv platform, using the Mercury SOAP API, and periodically send a transaction.  The code will then run some quick analysis on the results and flash a green or red LED based on that analysis.  As you will see the analysis is trivial in the code but this is a small step to what could be an actual product.  Think about the ability to have a low cost processing platform within each merchant environment...the opportunity is vast!
 
-#Unboxing the Raspberry Pi
+# Unboxing the Raspberry Pi
 
 Each team (limited to the first ten teams) that is interested in accepting the Raspberry Pi Vantiv challenge will receive this kit: http://www.canakit.com/raspberry-pi-starter-ultimate-kit.html.  In thinking about a hardware challenge at the hackathon we had many questions:  would attendees already have a Raspberry Pi?  Would they be able to travel with the hardware necessary to make things work?  How difficult would it be to develop something in 24 hours and would the resulting product demo well?  Would the Raspberry Pi be enough?  Or would attendees want to interact with sensors that attach to the Pi?
 
@@ -36,7 +36,7 @@ Well, that was not so bad...except for the fact that I did not have an extra key
 
 ![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/allpluggedin.JPG)
 
-#Setup
+# Setup
 
 Why am I telling you about Raspbian inside of a c# GitHub repo?  Well, I had to start somewhere and while the wires are a little frightening a linux variant does not scare me.  There are quite a few getting started guides (go ahead and google and you'll find them) but it looked like most of them are for Raspbian.  We expect that most people writing code at the hackathon will want to go with Raspbian because it is quick/easy.  That said, for those of you that are already developing in Visual Studio I think the case could be made that you will feel right at home with Windows IoT and Visual Studio.
 
@@ -53,13 +53,13 @@ As for Windows IoT it was similarly easy to setup and get going.  I followed the
 All of the same information is available if you use the HDMI cable and work on the device itself but it seems cooler to work remotely and just have the little Pi sitting there in its uncomplicated glory.  Now that I gained access to the device itself it was time to write an application.
 
 
-#Deploying
+# Deploying
 
 Well, not quite ready for code.  Everything is setup and ready to go, so let us first discuss deployment.  I had the Blinky sample code loaded in Visual Studio.  If you look on project settings then click the Debug tab you will see the Start options.  Make sure 'Remote Machine' is selected and then type the IP address of your Raspberry Pi.  Hmmm....how are all of the participants going to know what the IP address is of their Pis?  This is where the HDMI cable comes in handy...plug the HDMI cable into the Pi and then into your computer and you should have everything you need.  After you get the IP address you can unplug your HDMI cable and go back to coding.  Do not check 'use authentication'.
 
 Hit the F5 button and that will deploy the Blinky application to your Raspberry Pi and after a short couple of minutes the LED will start flashing.  Your 'Hello World' application is now complete.
 
-#Writing Code
+# Writing Code
 
 Getting back to the Vantiv API challenge now it's time to write some quick code to integrate to the Vantiv API.  We will use the Blinky code as a reference which basically makes an attached LED blink but we're going to use two LEDs (a red and green one) and we will make them flash quickly for two different use cases:
 
@@ -87,11 +87,11 @@ And here is the final picture of the breadboard.  Note the orientation of the re
 ![RaspberryPi.CSharp](https://github.com/vantivlabs/RaspberryPi.CSharp/blob/master/images/finalprojectbreadboard.JPG)
 
 
-#Hardware
+# Hardware
 
 Not much was mentioned above about the hardware but it should be straightforward to setup the two LEDs, two resistors, and wires following the pictures.  If the pictures are not good enough have a look at the tutorials below in 'Useful Links'.
 
-#Good Things to Know
+# Good Things to Know
 
 * We will have at least one USB Keyboard and one USB mouse available at the hackathon.  More than likely you will only need the keyboard/mouse combo at the very beginning to connect your Raspberry Pi to the wireless network and then from there you can use remote access capability (SSH, Powershell, direct deploy, etc.) depending on your operating system.  We had a follow up question if we were bringing monitors for the Pis.  The answer is we hope to have one monitor, usb keyboard, and usb mouse but there are multiple ways you can connect to the Pi without a monitor.  I tried using these instructions:  https://www.raspberrypi.org/blog/use-your-desktop-or-laptop-screen-and-keyboard-with-your-pi/, but found that all I needed to do was attach the Raspberry Pi directly to my macbook with an ethernet cable and then enable Internet sharing and everything just worked.  Really easy and simple...no monitor needed...but as stated above we hope to still bring one just in case.
 
@@ -116,13 +116,13 @@ Not much was mentioned above about the hardware but it should be straightforward
 * Please feel free to bring other sensors with you to satisfy your hardware hacking needs:  temperature, wind direction (ha!), humidity, anything you think will make your product better.
 
 
-#Useful Links
+# Useful Links
 
 https://github.com/InitialState/piot-101/wiki -- great tutorial on getting everything up and running
 
 https://dev.windows.com/en-US/iot -- lots of useful information about windows IoT
 
-#Other cool things
+# Other cool things
 
 It is amazing how many fantastic things people are building with the Raspberry Pi.  The device epitomizes innovation and getting your hands on one will immediately get your brain churning.
 
@@ -134,7 +134,7 @@ And here's another...
 
 https://learnaddict.com/2015/08/03/raspberry-pi-stack-a-platform-for-learning-about-iot/
 
-#Legal Stuff
+# Legal Stuff
 
 [Privacy Policy, Copyright Notices, and Terms of Use](https://vantiv.com/privacy-policy)
 
