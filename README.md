@@ -2,7 +2,7 @@
 
 # Overview
 
-This repository will provide information about the Raspberry Pi specifically for those that are going to accept the Vantiv API challenge at Money20/20.  There will be some interesting challenges with these hardware components but we believe without challenge there is no reward.  These repositories will jumpstart your development.
+This repository provides information about the Raspberry Pi.  It was specifically for those that participated in a Money20/20 hackathon for the Vantiv API challenge but now it is an excellent artifact to support learning how to write code and leveraging a payment API for the Pi.
 
 Infrastructure in the financial world is mind numbing and detecting issues quickly is a high priority for platform teams.  What if we could send each one of the merchants, or financial institutions, a cheap device that would help us detect processing issues before they happened?  Enter the Raspberry Pi!
 
@@ -10,9 +10,9 @@ This code is going to integrate to the Vantiv platform, using the Mercury SOAP A
 
 # Unboxing the Raspberry Pi
 
-Each team (limited to the first ten teams) that is interested in accepting the Raspberry Pi Vantiv challenge will receive this kit: http://www.canakit.com/raspberry-pi-starter-ultimate-kit.html.  In thinking about a hardware challenge at the hackathon we had many questions:  would attendees already have a Raspberry Pi?  Would they be able to travel with the hardware necessary to make things work?  How difficult would it be to develop something in 24 hours and would the resulting product demo well?  Would the Raspberry Pi be enough?  Or would attendees want to interact with sensors that attach to the Pi?
+This repository leverages the follow kit : http://www.canakit.com/raspberry-pi-starter-ultimate-kit.html.
 
-There was only one way to find out and that meant ordering a device and...well....hacking!  The ultimate starter kit from CanaKit seemed to be a good fit for what we are trying to achieve.  The kit has everything needed to get up and running quickly and has enough extras to allow for creativity.
+The ultimate starter kit from CanaKit seemed to be a good fit for learning about the Pi.  The kit has everything needed to get up and running quickly and has enough extras to allow for creativity.
 
 Here's the initial packaging and the contents after opening:
 
@@ -38,7 +38,7 @@ Well, that was not so bad...except for the fact that I did not have an extra key
 
 # Setup
 
-Why am I telling you about Raspbian inside of a c# GitHub repo?  Well, I had to start somewhere and while the wires are a little frightening a linux variant does not scare me.  There are quite a few getting started guides (go ahead and google and you'll find them) but it looked like most of them are for Raspbian.  We expect that most people writing code at the hackathon will want to go with Raspbian because it is quick/easy.  That said, for those of you that are already developing in Visual Studio I think the case could be made that you will feel right at home with Windows IoT and Visual Studio.
+Why am I telling you about Raspbian inside of a c# GitHub repo?  Well, I had to start somewhere and while the wires are a little frightening a linux variant does not scare me.  There are quite a few getting started guides (go ahead and google and you'll find them) but it looked like most of them are for Raspbian.
 
 I started with Raspbian, made everything work with Raspbian, and then switched to Windows IoT to see the differences.  Turns out, not much difference.  If you are interested in the Python version of this code click on over to the python repository.  After we get through the two Raspian setup screens we'll switch to Windows and c# for the rest of this loooong "readme".
 
@@ -61,7 +61,7 @@ Hit the F5 button and that will deploy the Blinky application to your Raspberry 
 
 # Writing Code
 
-Getting back to the Vantiv API challenge now it's time to write some quick code to integrate to the Vantiv API.  We will use the Blinky code as a reference which basically makes an attached LED blink but we're going to use two LEDs (a red and green one) and we will make them flash quickly for two different use cases:
+Now it's time to write some quick code to integrate to the Vantiv API.  We will use the Blinky code as a reference which basically makes an attached LED blink but we're going to use two LEDs (a red and green one) and we will make them flash quickly for two different use cases:
 
 * If the transaction approves we will make the green LED flash otherwise it will flash the red LED
 * If the elapsed time of the transaction is > .5 seconds then we will flash the red LED otherwise flash the green LED
@@ -93,9 +93,9 @@ Not much was mentioned above about the hardware but it should be straightforward
 
 # Good Things to Know
 
-* We will have at least one USB Keyboard and one USB mouse available at the hackathon.  More than likely you will only need the keyboard/mouse combo at the very beginning to connect your Raspberry Pi to the wireless network and then from there you can use remote access capability (SSH, Powershell, direct deploy, etc.) depending on your operating system.  We had a follow up question if we were bringing monitors for the Pis.  The answer is we hope to have one monitor, usb keyboard, and usb mouse but there are multiple ways you can connect to the Pi without a monitor.  I tried using these instructions:  https://www.raspberrypi.org/blog/use-your-desktop-or-laptop-screen-and-keyboard-with-your-pi/, but found that all I needed to do was attach the Raspberry Pi directly to my macbook with an ethernet cable and then enable Internet sharing and everything just worked.  Really easy and simple...no monitor needed...but as stated above we hope to still bring one just in case.
+* There are multiple ways you can connect to the Pi without a monitor.  I tried using these instructions:  https://www.raspberrypi.org/blog/use-your-desktop-or-laptop-screen-and-keyboard-with-your-pi/, but found that all I needed to do was attach the Raspberry Pi directly to my macbook with an ethernet cable and then enable Internet sharing and everything just worked.  Really easy and simple...no monitor needed.
 
-* It is smart to immediately change the default password.  We know none of the hackathon participants would ever play practical jokes on others but at the end of the day changing default passwords is simple, easy, and well....something everyone should do.
+* It is smart to immediately change the default password.
 
 * The USB WiFi dongle that is packaged with the kit works for Raspbian but not for Windows IoT.  If you will be developing for Windows IoT you will need to purchase/bring a WiFi dongle that works with Windows IoT (currently there is only one):  http://ms-iot.github.io/content/en-US/win10/SetupWiFi.htm.  We have tested and the Raspberry Pi WiFi Dongle does indeed work as expected.
 
@@ -109,11 +109,9 @@ Not much was mentioned above about the hardware but it should be straightforward
 
 * If you are going to work with Windows IoT you will need a computer with windows 10 and Visual Studio 2015 Community edition.  Actually, you do not need community edition, any version of Visual Studio 2015 will work.
 
-* If you want to put a different OS version other than Raspbian on the Pi you will need a MicroSD adapter.  We should have one or two of these with us at the hackathon in case you do not have one, are unable to bring one, or forget to bring it.
+* If you want to put a different OS version other than Raspbian on the Pi you will need a MicroSD adapter.
 
 * It's likely also a good idea to give your device a unique name.
-
-* Please feel free to bring other sensors with you to satisfy your hardware hacking needs:  temperature, wind direction (ha!), humidity, anything you think will make your product better.
 
 
 # Useful Links
